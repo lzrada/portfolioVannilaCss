@@ -1,0 +1,259 @@
+html {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --maincolor: #272626;
+  --second-color: #e92828;
+  --text-color: #fff;
+  --tree-color: #8c1010;
+  --default-color: black;
+}
+
+body {
+  background-color: var(--maincolor);
+  color: var(--text-color);
+}
+body h2 {
+  margin: 32px;
+}
+
+/* section header */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  margin-right: 100px;
+}
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  background-color: #0000;
+  margin-right: 10px;
+}
+.navbar li {
+  margin: 10px 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: var(--second-color);
+}
+
+/* section container */
+.container {
+  margin: 10px 30px 0px 10px;
+  display: flex;
+  padding: 5px;
+}
+h3 {
+  margin: 25px;
+  font-size: 300%;
+}
+span {
+  color: var(--second-color);
+}
+.wrapper p {
+  margin: 25px;
+  font-size: 150%;
+  color: var(--tree-color);
+}
+.text {
+  margin: 25px;
+  width: 450px;
+  font-size: 120%;
+  display: flex;
+}
+.button_satu {
+  background-color: var(--maincolor);
+  color: var(--maincolor);
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 30px;
+  border: solid 2px rgb(246, 7, 7);
+}
+.button_satu a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+.button_satu:hover {
+  cursor: pointer;
+}
+.icon-container {
+  display: flex;
+  border-radius: 50%;
+}
+.icon_satu {
+  font-size: 18px;
+  margin: 10px 10px 10px 27px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  width: 20px;
+  border-radius: 100%;
+  border: solid 2px rgb(246, 7, 7);
+}
+.icon_satu a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+.icon_satu:hover {
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--maincolor);
+  border: solid 5px var(red);
+}
+aside .img {
+  margin: 10px 20px 30px 100px;
+}
+.img_satu {
+  width: 255px;
+  height: 544px;
+  margin: 10px 100px;
+  padding: 10px 10px 100px 30px;
+  transform: translateY(-50px);
+  top: 0;
+}
+/* section-end */
+
+/* section content */
+#content h3 {
+  text-align: center;
+}
+.content-read {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.p-read p {
+  background-color: rgb(83, 75, 75);
+  color: aliceblue;
+  font-size: 18px;
+  padding: 50px;
+  width: 500px;
+  margin: 20px 100px;
+  height: fit-content;
+  border-radius: 20px;
+  flex: 2;
+}
+figure img {
+  margin-top: -80px;
+  width: 400px;
+  height: 600px;
+  padding: 10px;
+}
+.container-skill {
+  width: 100%;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+}
+.skill {
+  text-align: center;
+  margin: auto;
+}
+#skill h3 {
+  text-align: center;
+  font-weight: 800;
+}
+.icon-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  text-align: center;
+}
+.icon-satu,
+.icon-dua,
+.icon-tiga {
+  color: black;
+  font-size: 170px;
+  border: #0b0b0b solid 2px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  height: 220px;
+}
+.icon-satu p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.icon-dua p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.icon-tiga p {
+  text-align: center;
+  font-size: 18px;
+}
+.icon-satu:hover {
+  cursor: pointer;
+  background-color: rgb(44, 53, 53);
+  color: #fff;
+  border: #fff solid 2px;
+}
+.icon-dua:hover {
+  cursor: pointer;
+  background-color: rgb(44, 53, 53);
+  color: #fff;
+  border: #fff solid 2px;
+}
+.icon-tiga:hover {
+  cursor: pointer;
+  background-color: rgb(44, 53, 53);
+  color: #fff;
+  border: #fff solid 2px;
+}
+/* section end */
+
+/* section contact */
+.contact {
+  padding: 4px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+}
+#contact h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer */
+footer {
+  height: 25px;
+  border-radius: 10px;
+}
+footer p {
+  text-align: center;
+}
+/*responsive*/
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 768px;
+  }
+  aside img {
+    width: 50px;
+    height: 50px;
+  }
+}
